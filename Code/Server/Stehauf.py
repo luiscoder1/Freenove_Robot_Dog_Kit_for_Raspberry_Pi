@@ -10,10 +10,19 @@ def map(value,fromLow,fromHigh,toLow,toHigh):
 pwm = Adafruit_PCA9685.PCA9685()   
 pwm.set_pwm_freq(50)
 
-angle=90
-date=map(angle,0,180,102,512)
-pwm.set_pwm(4, 0, int(date))
-angle=90
+#angle=-40
+#date=map(angle,0,180,102,512)
+#pwm.set_pwm(4, 0, int(date))
+#angle=-40
+#date=map(angle,0,180,102,512)
+#pwm.set_pwm(7, 0, int(date))
+angle=30
 date=map(angle,0,180,102,512)
 pwm.set_pwm(7, 0, int(date))
+#angle=30
+#date=map(angle,0,180,102,512)
+#pwm.set_pwm(2, 0, int(date))
+#angle=30
+#date=map(angle,0,180,102,512)
+#pwm.set_pwm(5, 0, int(date))
 #servo.setServoAngle(4,0)
